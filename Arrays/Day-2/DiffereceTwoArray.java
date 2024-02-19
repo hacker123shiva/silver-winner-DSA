@@ -19,7 +19,7 @@ public class DiffereceTwoArray {
             arr[--size]=arr2[i2]-arr1[i1];
         }else{
             arr[--size]=10  +arr2[i2]-arr1[i1];
-            arr2[i2+1]--;
+            arr2[i2-1]--;
         }
     }
  

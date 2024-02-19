@@ -19,3 +19,12 @@ public class Swap {
      }
     
 }
+
+/*
+PS D:\DSA\Arrays\Day-1> java Swap
+16
+13
+14
+15
+12 
+ */

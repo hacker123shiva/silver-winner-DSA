@@ -29,5 +29,18 @@ public class Span {
         int span=spanValue(arr);
         System.out.println("Span value is:: "+span);
     }
+
     
 }
+
+
+/*
+PS D:\DSA\Arrays\Day-1> java Span
+5
+0
+10
+100
+1000
+10000
+Span value is:: 10000
+ */

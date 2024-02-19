@@ -26,3 +26,17 @@ public class Search {
     }
 
 }
+
+/*
+ PS D:\DSA\Arrays\Day-1> javac .\Search.java
+PS D:\DSA\Arrays\Day-1> java Search        
+5     
+12   
+14
+14
+16
+18
+14
+Index :: 1
+*/
+

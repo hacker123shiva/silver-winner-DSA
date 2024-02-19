@@ -119,3 +119,24 @@ PS D:\DSA\Arrays\Day-1> java SumTwoArray
 [2, 3, 4, 5, 6]
 [3, 2, 3, 4, 4]
  */
+
+ /*
+  
+ PS D:\DSA\Arrays\Day-1> java SumTwoArray        
+4
+5
+
+8
+8
+8
+8
+
+9
+9
+9
+9
+9
+[8, 8, 8, 8]
+[9, 9, 9, 9, 9]
+[1, 0, 8, 8, 8, 7]
+  */

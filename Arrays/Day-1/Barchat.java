@@ -47,3 +47,23 @@ public class Barchat {
 
     }
 }
+
+
+/*
+PS D:\DSA\Arrays\Day-1> javac .\Barchat.java
+PS D:\DSA\Arrays\Day-1> java Barchat
+5
+3
+1
+0
+7
+5
+          *
+          *
+          *  *
+          *  *
+ *        *  *
+ *        *  *
+ *  *     *  * 
+
+ */

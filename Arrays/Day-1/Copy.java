@@ -15,3 +15,14 @@ public class Copy {
         System.out.println(arr[i]);
     }
 }
+/*
+shallow copy
+PS D:\DSA\Arrays\Day-1> java Copy
+12
+1000
+14
+15
+16
+ */
+
+ 
