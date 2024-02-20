@@ -42,4 +42,6 @@ public class NextGER {
     else 
     continue
  }
+
+ Time complexity : O(n)
  */

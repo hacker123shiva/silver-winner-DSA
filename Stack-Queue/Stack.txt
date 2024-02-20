@@ -1,0 +1,7 @@
+In Stack we have for basic operation
+push- add at top
+pop- remove from top
+peek- get from top
+size- get size of Stack
+
+

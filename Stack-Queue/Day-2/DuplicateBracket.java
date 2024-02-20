@@ -10,6 +10,7 @@ public static boolean checkDup(String str){
        if(st.size()!=0&&st.peek()=='('){
         return true;
        }
+
       else{
         while(st.peek()!='('){
             st.pop();
@@ -33,3 +34,18 @@ public static void main(String []args){
     System.out.println(res);
 }
 }
+
+/*
+ PS D:\DSA\Stack-Queue\Day-2> javac .\DuplicateBracket.java
+PS D:\DSA\Stack-Queue\Day-2> java DuplicateBracket
+((a+b)+(c+d))
+false
+PS D:\DSA\Stack-Queue\Day-2> java DuplicateBracket        
+(a+b)+((c+d))
+true
+ */
+
+ /*
+  Time complexity is O(n)
+  */
+

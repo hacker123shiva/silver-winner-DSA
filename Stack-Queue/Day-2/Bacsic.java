@@ -38,3 +38,14 @@ Exception in thread "main" java.util.EmptyStackException
         at Bacsic.main(Bacsic.java:23) 
 
  */
+
+ /*
+  PS D:\DSA\Stack-Queue\Day-2> java Bacsic        
+[10, 20]->20 2
+[10, 20, 30]->30 3
+[10, 20, 30, 40]->40 4
+[10, 20, 30]->30 3
+[10, 20]->20 2
+[10]->10 1
+[]-> 0
+  */
