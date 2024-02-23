@@ -16,11 +16,8 @@ while(st.size()>0 && arr[i]>arr[st.peek()])
     st.pop();
 }
 
- 
     st.push(i);
- 
 
- 
         }
 
 while(st.size()>0){
@@ -42,3 +39,19 @@ while(st.size()>0){
          nger(arr);
     }
 }
+
+
+/*
+PS D:\DSA\Stack-Queue\Day-3> javac .\NextGERALT.java
+PS D:\DSA\Stack-Queue\Day-3> java NextGERALT        
+NGETR of 2 is 5
+NGETR of 5 is 9
+NGETR of 9 is 12
+NGETR of 3 is 12
+NGETR of 1 is 12
+NGETR of 12 is -1
+NGETR of 6 is 8
+NGETR of 8 is -1
+NGETR of 7 is -1
+ */
+

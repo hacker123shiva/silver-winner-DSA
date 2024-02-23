@@ -51,3 +51,23 @@ return ng;
     stockSpan(arr);
    }
 }
+
+/*
+ PS D:\DSA\Stack-Queue\Day-4> javac .\StockSpan.java
+PS D:\DSA\Stack-Queue\Day-4> java StockSpan
+1->1
+2->2
+3->3
+1->1
+2->2
+1->1
+2->2
+3->5
+9->9
+1->1
+1->1
+2->3
+3->4
+5->5
+1->1
+ */

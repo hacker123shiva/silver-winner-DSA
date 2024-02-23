@@ -38,3 +38,17 @@ public class NextSER {
          nser(arr);
     }
 }
+
+/*
+ PS D:\DSA\Stack-Queue\Day-3> javac .\NextSER.java
+PS D:\DSA\Stack-Queue\Day-3> java NextSER
+NSETR of 2 is 1
+NSETR of 5 is 3
+NSETR of 9 is 3
+NSETR of 3 is 1
+NSETR of 1 is -1
+NSETR of 12 is 6
+NSETR of 6 is -1
+NSETR of 8 is 7
+NSETR of 7 is -1
+ */

@@ -5,3 +5,6 @@ peek- get from top
 size- get size of Stack
 
 
+Infix: Human understanding a*b, a*b+c/d, 2+(5-3*2/4)
+Prefix: *ab
+Postfix: ab*

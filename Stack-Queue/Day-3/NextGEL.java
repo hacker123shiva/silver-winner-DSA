@@ -37,3 +37,18 @@ public class NextGEL {
          ngl(arr);
     }
 }
+
+
+/*
+ PS D:\DSA\Stack-Queue\Day-3> javac NextGEL.java
+PS D:\DSA\Stack-Queue\Day-3> java NextGEL      
+NGETL of 2 is -1
+NGETL of 5 is -1
+NGETL of 9 is -1
+NGETL of 3 is 9
+NGETL of 1 is 3
+NGETL of 12 is -1
+NGETL of 6 is 12
+NGETL of 8 is 12
+NGETL of 7 is 8
+ */

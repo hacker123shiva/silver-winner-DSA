@@ -83,3 +83,11 @@ public class LargestAreaHistogram {
 
   
 }
+
+/*
+PS D:\DSA\Stack-Queue\Day-4> javac .\LargestAreaHistogram.java
+PS D:\DSA\Stack-Queue\Day-4> java LargestAreaHistogram        
+nsml index: [-1, -1, 1, 1, 3, -1, 5]
+nsmr index: [1, 5, 3, 5, 5, -1, -1]
+Largest Area Histogram 12
+ */
