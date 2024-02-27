@@ -90,3 +90,10 @@ System.out.println(m);
     }
 
 }
+
+/*
+ PS D:\DSA\Stack-Queue\Day-6> javac .\InfixConv.java
+PS D:\DSA\Stack-Queue\Day-6> java InfixConv        
+2+(5-3*6/2)
+{Postfix:=2536*2/-+, Prefix:=+2-5/*362}
+ */

@@ -62,3 +62,11 @@ System.out.println(m);
 
 }
  
+/*
+ PS D:\DSA\Stack-Queue\Day-6> javac .\PreConvEval.java
+PS D:\DSA\Stack-Queue\Day-6> java PreConvEval        
+-+2/*6483
+{Postfix: =264*8/+3-, Infix: =((2+((6*4)/8))-3), Value: =2}
+ */
+
+ 
