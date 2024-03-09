@@ -40,4 +40,11 @@ if(st.size()!=0){
 /*
   d d i d
  3 2 1 5 4
+
+PS D:\DSA\Stack-Queue\Day-8> java SmallestNumberPattern        
+ d d i d
+3 2 1 5 4
+PS D:\DSA\Stack-Queue\Day-8> java SmallestNumberPattern
+ d d d i i d
+4 3 2 1 5 7 6
  */

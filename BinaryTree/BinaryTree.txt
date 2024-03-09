@@ -1,0 +1,4 @@
+Identity of sum : 0
+Identity of product: 1
+Identity of min : Infinity
+Identiy of max: -Infinity

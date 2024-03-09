@@ -16,4 +16,43 @@ Postfix Evaluation:
 
 Celebrity: 
 Known by everybody but  knows nobody
-        
+
+Use of Comparator:
+Collections.sort(lst, new Comparator<List<Integer>>() {
+    @Override
+    public int compare(List<Integer> o1, List<Integer> o2) {
+        if(o1.get(0)!=o2.get(0)){
+       return o1.get(0).compareTo(o2.get(0 ));
+        }else{
+            return o1.get(1).compareTo(o2.get(1 ));
+        }
+    }
+});
+
+Use of Comparable:
+  public static class Pair implements Comparable<Pair>{
+        int st;
+        int et;
+       
+
+        Pair(int st, int et){
+            this.st=st;
+            this.et=et;
+        }
+
+
+        //this ->other return +ve
+        // this ==other return 0
+        // this < other return -ve
+        @Override
+        public int compareTo(MergeInterval.Pair other) {
+            
+            if(this.st!=other.st){
+                return this.st - other.st;
+            }
+            else{
+                return this.et -other.et;
+            }
+            
+        }
+  }
