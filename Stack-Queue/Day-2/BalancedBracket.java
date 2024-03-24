@@ -2,79 +2,102 @@ import java.util.Scanner;
 import java.util.Stack;
 
 public class BalancedBracket {
-    
-    public static boolean balancedBrac(String str){
-        Stack<Character> st=new Stack<>();
 
-        for(int i=0;i<str.length();i++){
-            char ch=str.charAt(i);
+    public static boolean balancedBrac(String str) {
+        Stack<Character> st = new Stack<>();
 
-            if(ch==']'||ch=='}'||ch==')'){
-               char cor= corres(ch);
-                if(st.size()==0){
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+
+            if (ch == ']' || ch == '}' || ch == ')') {
+                char cor = corres(ch);
+                if (st.size() == 0) {
                     return false;
                 } else {
-                    while(st.peek()!=cor){
-                    if(st.peek()=='('||st.peek()=='{'||st.peek()=='['&&st.peek()==cor){
-                      return false;
-                    }
-                    else{
-                        st.pop();
-                    }
+                    while (st.peek() != cor) {
+                        if (st.peek() == '(' || st.peek() == '{' || st.peek() == '[' && st.peek() == cor) {
+                            return false;
+                        } else {
+                            st.pop();
+                        }
                     }
                     st.pop();
                 }
 
-
-            }else if(ch=='['||ch=='{'||ch=='('){
+            } else if (ch == '[' || ch == '{' || ch == '(') {
                 st.push(ch);
             }
 
         }
-        if(st.size()!=0)
-        return false;
+        if (st.size() != 0)
+            return false;
 
         return true;
     }
 
     private static char corres(char ch) {
-         
-        if(ch==')')
-        return '(';
-        else if(ch==']')
-        return '[';
+
+        if (ch == ')')
+            return '(';
+        else if (ch == ']')
+            return '[';
         else
-        return '{';
-        
+            return '{';
+
     }
 
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
-    public static void main(String []args){
-        Scanner sc=new Scanner(System.in);
-
-        String str=sc.nextLine();
-        boolean res=balancedBrac(str);
+        String str = sc.nextLine();
+        boolean res = balancedBrac(str);
         System.out.println(res);
     }
 }
 
 /*
- PS D:\DSA\Stack-Queue\Day-2> javac .\BalancedBracket.java 
-PS D:\DSA\Stack-Queue\Day-2> java BalancedBracket
-[(a+b)+{(c+d)*(e/f)}]
-true
-PS D:\DSA\Stack-Queue\Day-2> java BalancedBracket
-[(a+b)+{(c+d)*(e/f)]}
-false
-PS D:\DSA\Stack-Queue\Day-2> javac .\BalancedBracket.java
-PS D:\DSA\Stack-Queue\Day-2> java BalancedBracket        
-[(a+b)+{(c+d)*(e/f)}
-false
-PS D:\DSA\Stack-Queue\Day-2> java BalancedBracket
-([(a+b)+{(c+d)*(e/f)}]
-false
+ * PS D:\DSA\Stack-Queue\Day-2> javac .\BalancedBracket.java
+ * PS D:\DSA\Stack-Queue\Day-2> java BalancedBracket
+ * [(a+b)+{(c+d)*(e/f)}]
+ * true
+ * PS D:\DSA\Stack-Queue\Day-2> java BalancedBracket
+ * [(a+b)+{(c+d)*(e/f)]}
+ * false
+ * PS D:\DSA\Stack-Queue\Day-2> javac .\BalancedBracket.java
+ * PS D:\DSA\Stack-Queue\Day-2> java BalancedBracket
+ * [(a+b)+{(c+d)*(e/f)}
+ * false
+ * PS D:\DSA\Stack-Queue\Day-2> java BalancedBracket
+ * ([(a+b)+{(c+d)*(e/f)}]
+ * false
  */
 
- /*
-  Time complexity O(n)
-  */
+class Solution {
+    public boolean isValid(String s) {
+        Stack<Character> stack = new Stack<>();
+
+        for (char ch : s.toCharArray()) {
+            if (ch == ')' || ch == ']' || ch == '}') {
+                if (stack.isEmpty() || stack.pop() != corres(ch))
+                    return false;
+            } else {
+                stack.push(ch);
+            }
+        }
+
+        return stack.isEmpty();
+    }
+
+    private static char corres(char ch) {
+        if (ch == ')')
+            return '(';
+        else if (ch == ']')
+            return '[';
+        else
+            return '{';
+    }
+}
+
+/*
+ * Time complexity O(n)
+ */
