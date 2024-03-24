@@ -1,5 +1,7 @@
 
-public class RemoveNodeBST {
+public class PrintRange {
+    static int sum = 0;
+
     public static class Node {
         int data;
         Node left;
@@ -42,6 +44,13 @@ public class RemoveNodeBST {
         System.out.println("Min of BST: " + min(root));
         System.out.println("Value exit  " + find(root, 87));
         System.out.println("Value exit  " + find(root, 100));
+        // rwsol(root);
+
+        System.out.println("Range between 30 -60");
+        range(root, 10, 60);
+
+        // display(root);
+
     }
 
     public static void display(Node node) {
@@ -129,7 +138,7 @@ public class RemoveNodeBST {
 
     }
 
-    // 0 child , 1 child, 2 child
+    // 0 child , 1L child, 1R child, 2 child
     public static Node remove(Node node, int data) {
         if (node == null) {
             return null;
@@ -155,5 +164,38 @@ public class RemoveNodeBST {
         }
 
         return node;
+    }
+
+    public static void rwsol(Node node) {
+        if (node == null)
+            return;
+
+        rwsol(node.right);
+        int tmp = node.data;
+        node.data = sum;
+        sum += tmp;
+        rwsol(node.left);
+    }
+
+    public static int lca(Node node, int d1, int d2) {
+        if (d1 < node.data && d2 < node.data) {
+            return lca(node.left, d1, d2);
+        } else if (d1 > node.data && d2 > node.data) {
+            return lca(node.right, d1, d2);
+        } else {
+            return node.data;
+        }
+    }
+
+    public static void range(Node node, int l, int h) {
+        if (node == null)
+            return;
+
+        range(node.left, l, h);
+        int val = node.data;
+        if (val < h && val > l) {
+            System.out.print(val + "->");
+        }
+        range(node.right, l, h);
     }
 }
