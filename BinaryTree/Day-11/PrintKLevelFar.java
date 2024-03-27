@@ -318,4 +318,12 @@ if(node==null){
 
 
      } 
+
+     public static void printKNodesFar(Node node, int data, int k){
+       path= new ArrayList<>();
+       find(node, data);
+       for(int i=0;i<path.size()&& i<=k;i++){
+        
+       }
+     }
 }

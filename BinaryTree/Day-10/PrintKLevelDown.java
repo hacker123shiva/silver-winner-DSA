@@ -322,8 +322,8 @@ if(node==null){
 }
 
 /*
- PS D:\DSA\BinaryTree\Day-10> javac NodeToRoot.java
-PS D:\DSA\BinaryTree\Day-10> java NodeToRoot      
+ PS D:\DSA\BinaryTree\Day-10> javac .\PrintKLevelDown.java
+PS D:\DSA\BinaryTree\Day-10> java PrintKLevelDown        
 12 30 37 25 70 62 87 75 50 25<-50->75
 12<-25->37
 .<-12->.
@@ -357,4 +357,5 @@ PostOrder Iterative
 12->30->37->25->70->62->87->75->50->
 true
 [70, 62, 75, 50]
+12-37-62-87-
  */

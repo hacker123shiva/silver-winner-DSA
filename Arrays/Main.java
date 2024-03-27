@@ -23,6 +23,6 @@ class Main{
        for(int i=0;i<count.length;i++){
         System.out.println(notes[i]+"->"+count[i]);
        }
-
+ 
     }
 }

@@ -2,3 +2,12 @@ Identity of sum : 0
 Identity of product: 1
 Identity of min : Infinity
 Identiy of max: -Infinity
+
+
+Traversal in Binary Tree:
+
+Pre- Euler left, going deep in recursion, Root is first, left tree and right tree
+In- Euler between left and right of node, left tree, root, right tree
+Post- Euler right of node,left of tree, right of tree, root,
+
+LevelOrder Traversal: breadth with 

@@ -224,7 +224,7 @@ System.out.println(str);
 
 /*
 PS D:\DSA\BinaryTree\Day-10> javac Traversal.java
-PS D:\DSA\BinaryTree\Day-10> java Traversal      
+PS D:\DSA\BinaryTree\Day-10> java Traversal
 12 30 37 25 70 62 87 75 50 25<-50->75
 12<-25->37
 .<-12->.
@@ -245,6 +245,9 @@ InOrderTravesal
 PostOrderTravesal
 12->30->37->25->70->62->87->75->50->
 LevelOrderTraversal
-50->25->75->12->37->62->87->30->70->
+50->
+25->75->
+12->37->62->87->
+30->70->
  */
 

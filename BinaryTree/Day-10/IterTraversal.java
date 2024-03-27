@@ -269,3 +269,39 @@ System.out.println(str);
         System.out.println(post);
      }
 }
+
+/*
+ PS D:\DSA\BinaryTree\Day-10> javac .\IterTraversal.java
+PS D:\DSA\BinaryTree\Day-10> java IterTraversal
+12 30 37 25 70 62 87 75 50 25<-50->75
+12<-25->37
+.<-12->.
+30<-37->.
+.<-30->.
+62<-75->87
+.<-62->70
+.<-70->.
+.<-87->.
+Size: 9
+Height: 3
+Max: 87
+Sum: 448
+PreOrderTraversal
+50->25->12->37->30->75->62->70->87->
+InOrderTravesal
+12->25->30->37->50->62->70->75->87->
+PostOrderTravesal
+12->30->37->25->70->62->87->75->50->
+LevelOrderTraversal
+50->
+25->75->
+12->37->62->87->
+30->70->
+
+PreOrder Interative
+50->25->12->37->30->75->62->70->87->
+Inorder Iterative
+12->25->30->37->50->62->70->75->87->
+PostOrder Iterative
+12->30->37->25->70->62->87->75->50->
+ */

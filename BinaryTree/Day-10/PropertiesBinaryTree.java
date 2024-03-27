@@ -146,3 +146,22 @@ System.out.println(str);
         return h;
     } 
 }
+
+
+/*
+PS D:\DSA\BinaryTree\Day-10> javac .\PropertiesBinaryTree.java
+PS D:\DSA\BinaryTree\Day-10> java PropertiesBinaryTree
+12 30 37 25 70 62 87 75 50 25<-50->75
+12<-25->37
+.<-12->.
+30<-37->.
+.<-30->.
+62<-75->87
+.<-62->70
+.<-70->.
+.<-87->.
+Size: 9
+Height: 3
+Max: 87
+Sum: 448
+ */
