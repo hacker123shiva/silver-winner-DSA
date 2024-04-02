@@ -13,3 +13,5 @@
 [striver sde](https://takeuforward.org/interviews/strivers-sde-sheet-top-coding-interview-problems/)
 
 [100-days Algorithm challenges](https://docs.google.com/spreadsheets/d/16OTM0vC6ixsYEfWQ7x1Am3nHj9o_PFkYDiEwzRi43-w/edit#gid=1136820592)
+
+[Striver dsa](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/)
