@@ -1,0 +1,3 @@
+Longest Consecutive Sequence -- do it in O(n)
+Rotate Image-- Revise
+Pascal Triangle -- Revise

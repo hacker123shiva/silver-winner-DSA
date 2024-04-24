@@ -1,0 +1,16 @@
+Kadane's algorithm is used to find the maximum subarray sum within a given array of integers. The algorithm iterates through the array, keeping track of the maximum subarray sum found so far. It uses dynamic programming approach with a clever insight.
+
+Here's how it works:
+
+Initialization:
+Initialize two variables, sum and max, to keep track of the current sum and the maximum subarray sum found so far.
+sum is initialized to 0, and max is initialized to the smallest possible integer value (Integer.MIN_VALUE).
+Iterating through the array:
+
+Loop through each element of the input array nums.
+For each element nums[i], update sum and max as follows:
+Update sum to be the maximum of either the current element nums[i] itself or the sum of the previous subarray sum sum + nums[i]. This step is crucial because it determines whether to include the current element in the subarray or start a new subarray from the current element.
+Update max to be the maximum of either the current sum or the previous max. This ensures that max always holds the maximum subarray sum found so far.
+
+Return the maximum subarray sum:
+After iterating through the entire array, return the value stored in max, which represents the maximum subarray sum found.
